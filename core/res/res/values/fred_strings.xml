@@ -37,4 +37,6 @@
     <string name="global_restart_bootloader">Bootloader</string>
     <string name="global_restart_bootloader_message">Restarting to bootloader\u2026</string><!-- Can be used in SysUIReboot -->
 
+    <!-- Assist manager -->
+    <string name="no_assist_found">No assist manager found</string>
 </resources>

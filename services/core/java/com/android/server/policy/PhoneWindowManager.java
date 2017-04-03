@@ -265,6 +265,7 @@ import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.view.autofill.AutofillManagerInternal;
 import android.view.inputmethod.InputMethodManagerInternal;
+import android.widget.Toast;
 
 import com.android.internal.R;
 import com.android.internal.accessibility.AccessibilityShortcutController;
@@ -4493,6 +4494,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             startActivityAsUser(intent, UserHandle.CURRENT);
         } catch (ActivityNotFoundException e) {
             Slog.w(TAG, "No activity to handle assist long press action.", e);
+            Toast.makeText(mContext, R.string.no_assist_found, Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -58,4 +58,7 @@
     <java-symbol type="string" name="global_restart_recovery_message" />
     <java-symbol type="string" name="global_restart_bootloader" />
     <java-symbol type="string" name="global_restart_bootloader_message" />
+
+    <!-- Assist manager -->
+    <java-symbol type="string" name="no_assist_found" />
 </resources>
