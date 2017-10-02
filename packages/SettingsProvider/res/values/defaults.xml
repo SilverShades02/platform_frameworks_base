@@ -222,4 +222,6 @@
     <string name="def_ntp_server_2" translatable="false">persist.vendor.ntp.svr_2</string>
 
     <integer name="def_ota_disable_automatic_update">1</integer>
+
+    <integer name="def_enable_dev_settings">1</integer>
 </resources>
