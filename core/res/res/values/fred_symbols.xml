@@ -61,4 +61,8 @@
 
     <!-- Assist manager -->
     <java-symbol type="string" name="no_assist_found" />
+
+    <!-- Full screen aspect ratio -->
+    <java-symbol type="bool" name="config_haveHigherAspectRatioScreen" />
+    <java-symbol type="dimen" name="config_screenAspectRatio" />
 </resources>
