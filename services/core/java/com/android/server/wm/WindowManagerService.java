@@ -7652,4 +7652,9 @@ public class WindowManagerService extends IWindowManager.Stub
             }
         }
     }
+
+    @Override
+    public void sendCustomAction(Intent intent) {
+        mPolicy.sendCustomAction(intent);
+    }
 }
