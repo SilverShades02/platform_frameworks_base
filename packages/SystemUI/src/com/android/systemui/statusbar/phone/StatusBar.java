@@ -3930,6 +3930,9 @@ public class StatusBar extends SystemUI implements DemoMode,
             try {
                 mOverlayManager.setEnabled("com.android.system.theme.dark",
                         useDarkTheme, mLockscreenUserManager.getCurrentUserId());
+                if (useDarkTheme) {
+                    unloadStockDarkTheme();
+                }
             } catch (RemoteException e) {
                 Log.w(TAG, "Can't change theme", e);
             }
