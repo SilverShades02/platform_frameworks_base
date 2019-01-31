@@ -34,15 +34,12 @@ import com.android.systemui.qs.tiles.DataSaverTile;
 import com.android.systemui.qs.tiles.DndTile;
 import com.android.systemui.qs.tiles.FlashlightTile;
 import com.android.systemui.qs.tiles.HeadsUpTile;
-import com.android.systemui.qs.tiles.GamingModeTile;
 import com.android.systemui.qs.tiles.HotspotTile;
-import com.android.systemui.qs.tiles.HWKeysTile;
 import com.android.systemui.qs.tiles.IntentTile;
 import com.android.systemui.qs.tiles.LocationTile;
 import com.android.systemui.qs.tiles.LteTile;
 import com.android.systemui.qs.tiles.NfcTile;
 import com.android.systemui.qs.tiles.NightDisplayTile;
-import com.android.systemui.qs.tiles.RebootTile;
 import com.android.systemui.qs.tiles.RotationLockTile;
 import com.android.systemui.qs.tiles.SoundTile;
 import com.android.systemui.qs.tiles.UsbTetherTile;
@@ -110,16 +107,10 @@ public class QSFactoryImpl implements QSFactory {
                 return new CaffeineTile(mHost);
             case "sound":
                 return new SoundTile(mHost);
-            case "reboot":
-                return new RebootTile(mHost);
             case "heads_up":
                 return new HeadsUpTile(mHost);
             case "usb_tether":
                 return new UsbTetherTile(mHost);
-            case "hwkeys":
-                return new HWKeysTile(mHost);
-            case "gaming":
-                return new GamingModeTile(mHost);
             case "lte":
                 return new LteTile(mHost);
         }
